@@ -11,6 +11,8 @@ Events:
 5. Close issue
 6. ...many others
 
+https://d381c2ilh1p47i.cloudfront.net/
+
 ### CI/CD Setup
 1.  CI/CD stps for container
 ![CI/CD Steps for container!](./assets/readme/images/ci_cd-workflow-I.jpg)

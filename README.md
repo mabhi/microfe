@@ -12,4 +12,9 @@ Events:
 6. ...many others
 
 ### CI/CD Setup
+1.  CI/CD stps for container
 ![CI/CD Steps for container!](./assets/readme/images/ci_cd-workflow-I.jpg)
+
+2.  Deployment workflow in AWS
+![CI/CD Steps for container!](./assets/readme/images/deployment-to-aws-I.jpg)
+

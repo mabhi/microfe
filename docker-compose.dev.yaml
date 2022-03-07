@@ -1,0 +1,41 @@
+version: '3'
+services:
+  container_dev:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./container
+    ports:
+      - '3050:8000'
+    volumes:
+        - /usr/app/node_modules
+        - ./container:/usr/app    
+
+  # auth_dev:
+  #   build:
+  #     dockerfile: Dockerfile.dev
+  #     context: ./auth
+  #   volumes:
+  #       - /usr/app/node_modules
+  #       - ./auth:/usr/app
+  #   ports:
+  #     - '3052:8002'
+  
+  # dashboard_dev:
+  #   build:
+  #     dockerfile: Dockerfile.dev
+  #     context: ./dashboard
+  #   ports:
+  #     - '3051:8001'
+  #   volumes:
+  #     - /usr/app/node_modules
+  #     - ./dashboard:/usr/app
+  
+  marketing_dev:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./marketing
+    ports:
+      - '3053:8003'
+    volumes:
+      - /usr/app/node_modules
+      - ./marketing:/usr/app

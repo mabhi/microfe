@@ -9,7 +9,8 @@ const prodConfig = {
   mode: 'production',
   output:{
     //   done for primarily caching issues
-      filename: "[name].[contenthash].js"
+      filename: "[name].[contenthash].js",
+      publicPath: '/container/latest/'
   },
   plugins: [
       new ModuleFederationPlugin({

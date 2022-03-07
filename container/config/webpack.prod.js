@@ -17,7 +17,7 @@ const prodConfig = {
             name: 'container',
             remotes: {
             //   location of child app must be known at build time
-            marketing: `marketingApp@${domain}/marketing/remoteEntry.js`,
+            marketing: `marketingApp@${domain}/marketing/latest/remoteEntry.js`,
             
             },
             shared: packageJson.dependencies

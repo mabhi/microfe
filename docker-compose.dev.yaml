@@ -10,15 +10,15 @@ services:
         - /usr/app/node_modules
         - ./container:/usr/app    
 
-  # auth_dev:
-  #   build:
-  #     dockerfile: Dockerfile.dev
-  #     context: ./auth
-  #   volumes:
-  #       - /usr/app/node_modules
-  #       - ./auth:/usr/app
-  #   ports:
-  #     - '3052:8002'
+  auth_dev:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./auth
+    volumes:
+        - /usr/app/node_modules
+        - ./auth:/usr/app
+    ports:
+      - '3052:8002'
   
   # dashboard_dev:
   #   build:

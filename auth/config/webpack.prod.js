@@ -11,10 +11,10 @@ const prodConfig = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'marketingApp',
+      name: 'authApp',
       filename: 'remoteEntry.js',
       exposes: {
-        './MarketingIndex': './src/bootstrap',
+        './AuthIndex': './src/bootstrap',
       },      
       shared: packageJson.dependencies
     }),  

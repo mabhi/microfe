@@ -4,14 +4,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const commonConfig = require('./webpack.common');
 const packageJson = require("../package.json")
 
-const devPort = 8003
+const devPort = 3053
 const devConfig = {
   mode: 'development',
-  /*
+  
   output:{
     publicPath: `http://localhost:${devPort}/`
   },
-  */
+  
   devServer: {
     port: devPort,
     historyApiFallback: {

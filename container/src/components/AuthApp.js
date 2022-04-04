@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { mount } from 'marketing/MarketingIndex'
+import { mount } from 'auth/AuthIndex'
 import { useHistory } from 'react-router-dom'
 export default () => {
     const ref = useRef(null)

@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile.dev
       context: ./container
     ports:
-      - '3050:8000'
+      - '3050:3050'
     volumes:
         - /usr/app/node_modules
         - ./container:/usr/app    
@@ -18,7 +18,7 @@ services:
         - /usr/app/node_modules
         - ./auth:/usr/app
     ports:
-      - '3052:8002'
+      - '3052:3052'
   
   # dashboard_dev:
   #   build:
@@ -35,7 +35,7 @@ services:
       dockerfile: Dockerfile.dev
       context: ./marketing
     ports:
-      - '3053:8003'
+      - '3053:3053'
     volumes:
       - /usr/app/node_modules
       - ./marketing:/usr/app

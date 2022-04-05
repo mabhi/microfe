@@ -20,15 +20,15 @@ services:
     ports:
       - '3052:3052'
   
-  # dashboard_dev:
-  #   build:
-  #     dockerfile: Dockerfile.dev
-  #     context: ./dashboard
-  #   ports:
-  #     - '3051:8001'
-  #   volumes:
-  #     - /usr/app/node_modules
-  #     - ./dashboard:/usr/app
+  dashboard_dev:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./dashboard
+    ports:
+      - '3051:3051'
+    volumes:
+      - /usr/app/node_modules
+      - ./dashboard:/usr/app
   
   marketing_dev:
     build:

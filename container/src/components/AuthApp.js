@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { mount } from 'auth/AuthIndex'
 import { useHistory } from 'react-router-dom'
-export default () => {
+export default ({onSignIn}) => {
     const ref = useRef(null)
     const history = useHistory() //Fetch current history in use in container.
     useEffect(() => {
@@ -16,7 +16,8 @@ export default () => {
                     history.push(nextPathname)
                 }
                 
-            }
+            },
+            onSignIn
         })
         //notify child apps about container's navigation
         history.listen(onParentNavigate)

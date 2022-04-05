@@ -18,7 +18,8 @@ const prodConfig = {
             remotes: {
             //   location of child app must be known at build time
             marketing: `marketingApp@${domain}/marketing/latest/remoteEntry.js`,
-            
+            dashboard: `dashboardApp@${domain}/dashboard/latest/remoteEntry.js`,
+            auth: `authApp@${domain}/auth/latest/remoteEntry.js`,                        
             },
             shared: packageJson.dependencies
         })

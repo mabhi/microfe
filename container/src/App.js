@@ -22,8 +22,8 @@ export default () => {
           <Header />
           <Suspense fallback={<Progress />}>
             <Switch>
-                <Route path="/" component={LazyMarketingApp}/>
                 <Route path="/auth" component={LazyAuthApp}/>
+                <Route path="/" component={LazyMarketingApp}/>
                 
             </Switch>
           </Suspense>

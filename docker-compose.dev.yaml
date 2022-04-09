@@ -39,3 +39,13 @@ services:
     volumes:
       - /usr/app/node_modules
       - ./marketing:/usr/app
+
+  video_dev:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./video-browser
+    ports:
+      - '3054:3054'
+    volumes:
+      - /usr/app/node_modules
+      - ./video-browser:/usr/app
